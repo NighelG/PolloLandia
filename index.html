@@ -5,7 +5,88 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
+<!-- CSS -->
+<link rel="stylesheet" href="src/estilo/proyecto.css">
+
 <body>
-    
+
+        <!-- Encabezado -->
+    <div class="divHeader">
+        <header id="encabezado">
+
+           <h3 id="titulo1"><img id="icon1" src="src/img/align-justify.svg" alt=""> D&N's ToDo</h3> 
+
+        </header>
+    </div>
+
+        <!-- Cuerpo -->
+    <div class="divBody">
+
+        <!-- Sidebar -->
+        <div class="sideBar">
+            <h4>Espacio de tareas</h4>
+
+                <div class="labelBox2">
+                    <p><img src="src/img/check-circle.svg" alt="">-Completado-</p>                   
+                </div>
+                     <ul id="espacioTareaC">
+
+                     </ul>
+                     <div id="completado"></div>
+                     
+                <br><br><br><br>     
+
+                <div class="labelBox2">
+                    <p><img src="src/img/x-circle.svg" alt="">-Desactivadas-</p>                  
+                </div>
+                    <ul id="espacioTareaD">
+
+                    </ul>
+                    <div id="desactivado"></div>
+        </div>
+
+        <!-- Maincontent -->
+        <div class="mainContent">
+
+            <h2>Tareas</h2>
+
+                <p id="tareaSubir">Por favor seleccione una tarea por subir</p>
+            <br>
+
+            <div class="tareaLabel">
+                <label for="upFile">Tarea</label>
+                <input type="text" id="upFile">
+
+                <label for="upDate">Fecha</label>
+                <input type="datetime-local" id="upDate">
+                <button id="subirFile">Subir</button>
+            </div>
+
+            <br><br>
+
+            <div class="labelBox2">
+                    <p><img src="src/img/circle.svg" alt="">-Pendiente-</p>
+                </div>
+            <br>
+            
+            <ul id="espacioTareaP">
+
+            </ul>
+
+            <div id="pendiente"></div>
+        </div>
+
+    </div>
+
+<!-- Javascript -->
+<script src="src/js/proyecto.js"></script>
+
 </body>
+   <!-- Enculizado -->
+    <div class="divFooter">
+        <footer id="enculizado">
+            <p class="dR">Diseñado y programado por Douglas Nighel Villagra García</p>
+        </footer>
+    </div>
 </html>
